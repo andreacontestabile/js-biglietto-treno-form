@@ -8,8 +8,63 @@
     <title>Document</title>
   </head>
   <body>
-
-
+    <main>
+      <div class="container">
+        <section id="calculator">
+          <h1>Calcola il prezzo del tuo biglietto</h1>
+          <div class="calculator-container">
+            <div class="input-row">
+              <div class="input-item">
+                <label for="name">Nome e Cognome</label>
+                <input id="name" type="text">
+              </div>
+              <div class="input-item">
+                <label for="km">Km da percorrere</label>
+                <input id="km" type="number">
+              </div>
+              <div class="input-item">
+                <label for="age-group">Fascia d'et&agrave;</label>
+                <select name="age-group" id="age-group">
+                  <option value="minorenne">Minorenne</option>
+                  <option value="maggiorenne">Maggiorenne</option>
+                  <option value="over">Over 65</option>
+                </select>
+              </div>
+            </div>
+            <div class="button-row">
+              <button id="generate">Genera</button>
+              <button id="cancel">Annulla</button>
+            </div>
+          </div>
+        </section>
+        <section id="ticket">
+          <h2>Il tuo biglietto</h2>
+          <div class="ticket-container">
+            <h3>Dettaglio passeggeri</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>NOME PASSEGGERO</th>
+                  <th>Offerta</th>
+                  <th>Carrozza</th>
+                  <th>Codice CP</th>
+                  <th>Costo Biglietto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="ticket-name">Pippo</td>
+                  <td id="ticket-offer">Prova</td>
+                  <td id="ticket-wagon">Prova</td>
+                  <td id="ticket-code">Prova</td>
+                  <td id="ticket-price">Prova</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
