@@ -1,3 +1,4 @@
+/* Generale */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +9,10 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
+}
+
+.hide {
+  display: none;
 }
 
 body {
@@ -25,6 +30,7 @@ body {
   border-radius: 5px;
 }
 
+
 h1, h2 {
   color: #fff;
   font-size: 30px;
@@ -35,6 +41,8 @@ h1, h2 {
 h1 {
   margin-bottom: 20px;
 }
+
+/* calculator-container */
 
 .calculator-container {
   margin-bottom: 25px;
@@ -88,7 +96,9 @@ h1 {
   margin-right: 15px;
 }
 
-.ticket-container {
+/* ticket-container */
+
+#ticket-container {
   padding: 20px;
   background-color: #fff;
 }

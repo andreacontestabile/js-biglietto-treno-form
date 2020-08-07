@@ -6,23 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Biglietto Treno Form</title>
   </head>
   <body>
     <main>
+      <!-- container -->
       <div class="container">
+        <!-- Sezione Calculator -->
         <section id="calculator">
           <h1>Calcola il prezzo del tuo biglietto</h1>
+          <!-- calculator-container -->
           <div class="calculator-container">
+            <!-- Input row -->
             <div class="input-row">
+              <!-- Input nome -->
               <div class="input-item">
                 <label for="name">Nome e Cognome</label>
                 <input id="name" type="text" placeholder="Inserisci il tuo nome">
               </div>
+              <!-- /Input nome -->
+              <!-- Input km -->
               <div class="input-item">
                 <label for="km">Km da percorrere</label>
                 <input id="km" type="number" min="1" placeholder="Inserisci i km">
               </div>
+              <!-- /Input Km -->
+              <!-- Input fascia età -->
               <div class="input-item">
                 <label for="age-group">Fascia d'et&agrave;</label>
                 <select name="age-group" id="age-group">
@@ -31,22 +40,33 @@
                   <option value="over">Over 65</option>
                 </select>
               </div>
+              <!-- /Input fascia età -->
             </div>
+            <!-- /Input Row -->
+            <!-- Button Row -->
             <div class="button-row">
               <button id="generate" class="btn">Genera</button>
               <button id="cancel" class="btn">Annulla</button>
             </div>
+            <!-- /Button Row -->
           </div>
+          <!-- /calculator-container -->
         </section>
+        <!-- /Sezione Calculator -->
+        <!-- Sezione Ticket -->
         <section id="ticket">
           <h2>Il tuo biglietto</h2>
-          <div class="ticket-container">
+          <!-- ticket-container -->
+          <div id="ticket-container">
             <h3>Dettaglio passeggeri</h3>
             <div class="ticket-details">
+              <!-- Nome biglietto -->
               <div class="ticket-name">
                 <h4>Nome passeggero</h4>
                 <p id="passenger-name">Mario Rossi</p>
               </div>
+              <!-- /Nome biglietto -->
+              <!-- Tabella dati biglietto -->
               <div class="ticket-data">
                 <table>
                   <thead>
@@ -59,18 +79,22 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td id="ticket-offer">Prova</td>
-                      <td id="ticket-wagon">Prova</td>
-                      <td id="ticket-code">Prova</td>
-                      <td id="ticket-price">Prova</td>
+                      <td id="ticket-offer"></td>
+                      <td id="ticket-wagon"></td>
+                      <td id="ticket-code"></td>
+                      <td id="ticket-price"></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <!-- /Tabella dati biglietto -->
             </div>
           </div>
+          <!-- /ticket-container -->
         </section>
+        <!-- /Sezione Ticket -->
       </div>
+      <!-- /container -->
     </main>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
