@@ -32,7 +32,12 @@ h1, h2 {
   text-align: center;
 }
 
+h1 {
+  margin-bottom: 20px;
+}
+
 .calculator-container {
+  margin-bottom: 25px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -81,4 +86,44 @@ h1, h2 {
 
 .button-row .btn:first-child {
   margin-right: 15px;
+}
+
+.ticket-container {
+  padding: 20px;
+  background-color: #fff;
+}
+
+h3, h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.ticket-details {
+  display: flex;
+}
+
+.ticket-name {
+  flex-shrink: 0;
+  padding: 30px 20px;
+  background-color: #999;
+}
+
+.ticket-name #passenger-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ticket-data {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+.ticket-data table th,
+.ticket-data table td {
+  height: 80px;
+  width: 150px;
+  font-size: 20px;
+  text-align: left;
 }
